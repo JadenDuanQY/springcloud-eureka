@@ -1,0 +1,19 @@
+server:
+  port: 1010                    # 指定该Eureka实例的端口
+spring:
+  application:
+    name: discovery
+eureka:
+#  instance:
+#    hostname: ${EUREKA_INSTANCE_HOSTNAME}        # 指定该Eureka实例的主机名
+#    instance-id: ${EUREKA_INSTANCE_HOSTNAME}
+#    prefer-ip-address: true
+#    nonSecurePort: ${EUREKA_INSTANCE_NONSECUREPORT}
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://loaclhost:1010/eureka
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 60000
