@@ -4,16 +4,16 @@ spring:
   application:
     name: discovery
 eureka:
-  instance:
-    hostname: eureka        # 指定该Eureka实例的主机名
-    instance-id: eureka
-    prefer-ip-address: true
-    nonSecurePort: 80
+#  instance:
+#    hostname: eureka-jaden-test.qyos.novalocal        # 指定该Eureka实例的主机名
+#    instance-id: eureka-jaden-test.qyos.novalocal
+#    prefer-ip-address: true
+#    nonSecurePort: 80
   client:
     registerWithEureka: false
     fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:80/eureka/
+#    serviceUrl:
+#      defaultZone: http://${eureka.instance.hostname}:80/eureka/
   server:
     enable-self-preservation: false
     eviction-interval-timer-in-ms: 60000
