@@ -1,8 +1,8 @@
 server:
-  port: 1010                    # 指定该Eureka实例的端口
+  port: ${EUREKA_PORT}                    # 指定该Eureka实例的端口
 spring:
   application:
-    name: discovery
+    name: eureka
 eureka:
   instance:
     hostname: ${EUREKA_INSTANCE_HOSTNAME}        # 指定该Eureka实例的主机名
